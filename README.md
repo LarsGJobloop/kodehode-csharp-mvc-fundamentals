@@ -10,4 +10,21 @@
    dotnet run --project server
    ```
 
-2. Link to server in Console Output
+## Supported commands
+
+- List all blogs
+  ```sh
+  curl \
+   -X GET "http://localhost:5211/blog"
+  ```
+- Add a new blog
+  ```sh
+  curl \
+   -X POST "http://localhost:5211/blog" \
+   -H "Content-Type: application/json" \
+   -d '{
+         "userName": "LarsG",
+         "title": "Surprise Eclipse",
+         "body": "Venus have never looked so cool as the day..."
+       }'
+  ```
