@@ -1,0 +1,6 @@
+# Artifiacts
+bin
+obj
+
+# Nix
+.direnv
